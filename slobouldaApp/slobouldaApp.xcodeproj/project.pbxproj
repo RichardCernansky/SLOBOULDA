@@ -14,6 +14,8 @@
 		CDCFEB222A8B60C700AB24D5 /* slobouldaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB212A8B60C700AB24D5 /* slobouldaAppTests.swift */; };
 		CDCFEB2C2A8B60C700AB24D5 /* slobouldaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB2B2A8B60C700AB24D5 /* slobouldaAppUITests.swift */; };
 		CDCFEB2E2A8B60C700AB24D5 /* slobouldaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB2D2A8B60C700AB24D5 /* slobouldaAppUITestsLaunchTests.swift */; };
+		CDCFEB3D2A8B89E400AB24D5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB3C2A8B89E400AB24D5 /* MapView.swift */; };
+		CDCFEB3F2A8B955000AB24D5 /* extensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB3E2A8B955000AB24D5 /* extensionColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CDCFEB272A8B60C700AB24D5 /* slobouldaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slobouldaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCFEB2B2A8B60C700AB24D5 /* slobouldaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slobouldaAppUITests.swift; sourceTree = "<group>"; };
 		CDCFEB2D2A8B60C700AB24D5 /* slobouldaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slobouldaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDCFEB3C2A8B89E400AB24D5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CDCFEB3E2A8B955000AB24D5 /* extensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				CDCFEB0F2A8B60C500AB24D5 /* slobouldaApp */,
+				CDCFEB3E2A8B955000AB24D5 /* extensionColor.swift */,
 				CDCFEB202A8B60C700AB24D5 /* slobouldaAppTests */,
 				CDCFEB2A2A8B60C700AB24D5 /* slobouldaAppUITests */,
 				CDCFEB0E2A8B60C500AB24D5 /* Products */,
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				CDCFEB102A8B60C500AB24D5 /* slobouldaAppApp.swift */,
+				CDCFEB3C2A8B89E400AB24D5 /* MapView.swift */,
 				CDCFEB122A8B60C500AB24D5 /* ContentView.swift */,
 				CDCFEB142A8B60C700AB24D5 /* Assets.xcassets */,
 				CDCFEB162A8B60C700AB24D5 /* Preview Content */,
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCFEB132A8B60C500AB24D5 /* ContentView.swift in Sources */,
+				CDCFEB3D2A8B89E400AB24D5 /* MapView.swift in Sources */,
 				CDCFEB112A8B60C500AB24D5 /* slobouldaAppApp.swift in Sources */,
+				CDCFEB3F2A8B955000AB24D5 /* extensionColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

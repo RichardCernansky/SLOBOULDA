@@ -7,14 +7,27 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     var body: some View {
-        Image("backgroundImage")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .offset(y: -18) // This pushes the image up by 50
-            .edgesIgnoringSafeArea(.all)
+        ZStack {
+            Image("backgroundImage")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .offset(y: -18) // This pushes the image up by y
+                .edgesIgnoringSafeArea(.all)
+
+            Button {
+            } label: {
+                Text("Boulder Locator")
+                    .foregroundColor(.white) // Set the text color to white
+                    .padding()
+                    .background(Color(hex: "C91012"))
+                    .clipShape(Capsule()) // Apply the capsule shape
+            }
+        }
     }
 }
 
