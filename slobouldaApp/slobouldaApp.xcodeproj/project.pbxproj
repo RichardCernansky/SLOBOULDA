@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDCFEB112A8B60C500AB24D5 /* slobouldaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB102A8B60C500AB24D5 /* slobouldaAppApp.swift */; };
+		CDCFEB112A8B60C500AB24D5 /* slobouldaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB102A8B60C500AB24D5 /* slobouldaApp.swift */; };
 		CDCFEB132A8B60C500AB24D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB122A8B60C500AB24D5 /* ContentView.swift */; };
 		CDCFEB152A8B60C700AB24D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCFEB142A8B60C700AB24D5 /* Assets.xcassets */; };
 		CDCFEB182A8B60C700AB24D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCFEB172A8B60C700AB24D5 /* Preview Assets.xcassets */; };
@@ -15,7 +15,13 @@
 		CDCFEB2C2A8B60C700AB24D5 /* slobouldaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB2B2A8B60C700AB24D5 /* slobouldaAppUITests.swift */; };
 		CDCFEB2E2A8B60C700AB24D5 /* slobouldaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB2D2A8B60C700AB24D5 /* slobouldaAppUITestsLaunchTests.swift */; };
 		CDCFEB3D2A8B89E400AB24D5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB3C2A8B89E400AB24D5 /* MapView.swift */; };
-		CDCFEB3F2A8B955000AB24D5 /* extensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB3E2A8B955000AB24D5 /* extensionColor.swift */; };
+		CDCFEB3F2A8B955000AB24D5 /* htmlCodeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB3E2A8B955000AB24D5 /* htmlCodeColor.swift */; };
+		CDCFEB4A2A8C21A600AB24D5 /* Retro Gaming.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDCFEB482A8C1FA300AB24D5 /* Retro Gaming.ttf */; };
+		CDCFEB4C2A8C241600AB24D5 /* OwreKynge.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDCFEB4B2A8C240D00AB24D5 /* OwreKynge.ttf */; };
+		CDCFEB502A8C25BB00AB24D5 /* EnchantedSword.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDCFEB4F2A8C25BB00AB24D5 /* EnchantedSword.ttf */; };
+		CDCFEB532A8C26EF00AB24D5 /* nokiafc22.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDCFEB512A8C26D100AB24D5 /* nokiafc22.ttf */; };
+		CDCFEB572A8CE8D400AB24D5 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB562A8CE8D400AB24D5 /* FavouritesView.swift */; };
+		CDCFEB592A8CE8E000AB24D5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB582A8CE8E000AB24D5 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		CDCFEB0D2A8B60C500AB24D5 /* slobouldaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slobouldaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDCFEB102A8B60C500AB24D5 /* slobouldaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slobouldaAppApp.swift; sourceTree = "<group>"; };
+		CDCFEB102A8B60C500AB24D5 /* slobouldaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slobouldaApp.swift; sourceTree = "<group>"; };
 		CDCFEB122A8B60C500AB24D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CDCFEB142A8B60C700AB24D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDCFEB172A8B60C700AB24D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,7 +53,14 @@
 		CDCFEB2B2A8B60C700AB24D5 /* slobouldaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slobouldaAppUITests.swift; sourceTree = "<group>"; };
 		CDCFEB2D2A8B60C700AB24D5 /* slobouldaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slobouldaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CDCFEB3C2A8B89E400AB24D5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		CDCFEB3E2A8B955000AB24D5 /* extensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionColor.swift; sourceTree = "<group>"; };
+		CDCFEB3E2A8B955000AB24D5 /* htmlCodeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = htmlCodeColor.swift; sourceTree = "<group>"; };
+		CDCFEB482A8C1FA300AB24D5 /* Retro Gaming.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Retro Gaming.ttf"; sourceTree = "<group>"; };
+		CDCFEB492A8C212600AB24D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CDCFEB4B2A8C240D00AB24D5 /* OwreKynge.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OwreKynge.ttf; sourceTree = "<group>"; };
+		CDCFEB4F2A8C25BB00AB24D5 /* EnchantedSword.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EnchantedSword.ttf; path = "../../../graphics/enchanted-sword/EnchantedSword.ttf"; sourceTree = "<group>"; };
+		CDCFEB512A8C26D100AB24D5 /* nokiafc22.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = nokiafc22.ttf; path = "../../../graphics/nokia-cellphone-fc/nokiafc22.ttf"; sourceTree = "<group>"; };
+		CDCFEB562A8CE8D400AB24D5 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		CDCFEB582A8CE8E000AB24D5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				CDCFEB0F2A8B60C500AB24D5 /* slobouldaApp */,
-				CDCFEB3E2A8B955000AB24D5 /* extensionColor.swift */,
 				CDCFEB202A8B60C700AB24D5 /* slobouldaAppTests */,
 				CDCFEB2A2A8B60C700AB24D5 /* slobouldaAppUITests */,
 				CDCFEB0E2A8B60C500AB24D5 /* Products */,
@@ -99,9 +111,14 @@
 		CDCFEB0F2A8B60C500AB24D5 /* slobouldaApp */ = {
 			isa = PBXGroup;
 			children = (
-				CDCFEB102A8B60C500AB24D5 /* slobouldaAppApp.swift */,
+				CDCFEB492A8C212600AB24D5 /* Info.plist */,
+				CDCFEB472A8C1F6400AB24D5 /* Fonts */,
+				CDCFEB102A8B60C500AB24D5 /* slobouldaApp.swift */,
 				CDCFEB3C2A8B89E400AB24D5 /* MapView.swift */,
 				CDCFEB122A8B60C500AB24D5 /* ContentView.swift */,
+				CDCFEB3E2A8B955000AB24D5 /* htmlCodeColor.swift */,
+				CDCFEB582A8CE8E000AB24D5 /* ProfileView.swift */,
+				CDCFEB562A8CE8D400AB24D5 /* FavouritesView.swift */,
 				CDCFEB142A8B60C700AB24D5 /* Assets.xcassets */,
 				CDCFEB162A8B60C700AB24D5 /* Preview Content */,
 			);
@@ -131,6 +148,17 @@
 				CDCFEB2D2A8B60C700AB24D5 /* slobouldaAppUITestsLaunchTests.swift */,
 			);
 			path = slobouldaAppUITests;
+			sourceTree = "<group>";
+		};
+		CDCFEB472A8C1F6400AB24D5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CDCFEB512A8C26D100AB24D5 /* nokiafc22.ttf */,
+				CDCFEB4F2A8C25BB00AB24D5 /* EnchantedSword.ttf */,
+				CDCFEB4B2A8C240D00AB24D5 /* OwreKynge.ttf */,
+				CDCFEB482A8C1FA300AB24D5 /* Retro Gaming.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDCFEB4C2A8C241600AB24D5 /* OwreKynge.ttf in Resources */,
+				CDCFEB4A2A8C21A600AB24D5 /* Retro Gaming.ttf in Resources */,
 				CDCFEB182A8B60C700AB24D5 /* Preview Assets.xcassets in Resources */,
 				CDCFEB152A8B60C700AB24D5 /* Assets.xcassets in Resources */,
+				CDCFEB532A8C26EF00AB24D5 /* nokiafc22.ttf in Resources */,
+				CDCFEB502A8C25BB00AB24D5 /* EnchantedSword.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCFEB132A8B60C500AB24D5 /* ContentView.swift in Sources */,
+				CDCFEB572A8CE8D400AB24D5 /* FavouritesView.swift in Sources */,
 				CDCFEB3D2A8B89E400AB24D5 /* MapView.swift in Sources */,
-				CDCFEB112A8B60C500AB24D5 /* slobouldaAppApp.swift in Sources */,
-				CDCFEB3F2A8B955000AB24D5 /* extensionColor.swift in Sources */,
+				CDCFEB592A8CE8E000AB24D5 /* ProfileView.swift in Sources */,
+				CDCFEB112A8B60C500AB24D5 /* slobouldaApp.swift in Sources */,
+				CDCFEB3F2A8B955000AB24D5 /* htmlCodeColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +462,7 @@
 				DEVELOPMENT_TEAM = 88R396JKJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = slobouldaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +492,7 @@
 				DEVELOPMENT_TEAM = 88R396JKJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = slobouldaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

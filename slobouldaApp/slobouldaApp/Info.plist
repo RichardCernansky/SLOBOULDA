@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location needed fof the map</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>EnchantedSword.ttf</string>
+		<string>nokiafc22.ttf</string>
+		<string>OwreKynge.ttf</string>
+		<string>Retro Gaming.ttf</string>
+	</array>
+</dict>
+</plist>
