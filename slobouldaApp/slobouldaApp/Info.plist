@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIdentifier</key>
+	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location needed fof the map</string>
+	<string>Enable location services for seeing your location</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>EnchantedSword.ttf</string>
@@ -11,5 +13,12 @@
 		<string>OwreKynge.ttf</string>
 		<string>Retro Gaming.ttf</string>
 	</array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 </dict>
 </plist>
