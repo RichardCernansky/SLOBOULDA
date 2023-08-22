@@ -27,7 +27,7 @@ struct BoulderArea: Codable, Identifiable {
 }
 
 struct LocationAnnotation: Identifiable {
-    var id = UUID() // This gives each annotation a unique identifier
+    var id: Int
     var coordinate: CLLocationCoordinate2D
     var isBoulder: Bool
 }
@@ -35,59 +35,69 @@ struct LocationAnnotation: Identifiable {
 struct MapView: View {
     @State private var boulders: [Boulder] = []
     @State private var boulderAreas: [BoulderArea] = []
+    @State private var dataLoaded: Bool = false
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 48.6690, longitude: 19.6990),
         span: MKCoordinateSpan(latitudeDelta: 6.0, longitudeDelta: 6.0)
     )
-
-    var body: some View {
-         Map(coordinateRegion: $region, showsUserLocation: true, annotationItems: annotations) { location in
-            MapAnnotation(coordinate: location.coordinate) {
-                Image(location.isBoulder ? "boulder" : "boulderArea")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 45, height: 45) // Adjust size as needed
-            }
-        }
-        .edgesIgnoringSafeArea(.all)
-        .onAppear{loadData(from: "boulder_areas", into: $boulderAreas)
-                  loadData(from: "boulders?boulderAreaId=0", into: $boulders)
-            
-        }
-    }
-    
     var annotations: [LocationAnnotation] {
         var locations: [LocationAnnotation] = []
         
         for area in boulderAreas {
             if let boulder = area.boulders.first {
-                locations.append(LocationAnnotation(coordinate: CLLocationCoordinate2D(latitude: boulder.latitude, longitude: boulder.longitude), isBoulder: false))
+                locations.append(LocationAnnotation(id: boulder.id, coordinate: CLLocationCoordinate2D(latitude: boulder.latitude, longitude: boulder.longitude), isBoulder: false))
             }
         }
         
         for boulder in boulders {
-            locations.append(LocationAnnotation(coordinate: CLLocationCoordinate2D(latitude: boulder.latitude, longitude: boulder.longitude), isBoulder: true))
+            locations.append(LocationAnnotation(id: boulder.id, coordinate: CLLocationCoordinate2D(latitude: boulder.latitude, longitude: boulder.longitude), isBoulder: true))
         }
         
         return locations
     }
+
     
-    func loadData<T: Decodable & Identifiable>(from tableEndpoint: String, into binding: Binding<[T]>) {
-        guard let url = URL(string: "http://localhost:8080/api/v1/\(tableEndpoint)") else {
-            print("Invalid URL")
-            return
+    var body: some View {
+        Map(coordinateRegion: $region, showsUserLocation: true, annotationItems: annotations) { location in
+            MapAnnotation(coordinate: location.coordinate) {
+                Image(location.isBoulder ? "boulder" : "boulderArea")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 40, height: 40) // Adjust size as needed
+                    .onTapGesture {
+                        if !location.isBoulder {
+                            handleBoulderAreaTap(at: location, regionBinding: $region)
+                            
+                        }
+                    }
+                }
+            }
+        .edgesIgnoringSafeArea(.all)
+        .onAppear {
+            if !dataLoaded {
+                loadData(from: "boulder_areas", into: $boulderAreas)
+                loadData(from: "boulders?boulderAreaId=0", into: $boulders)
+                dataLoaded = true
+            }
+        }
+    }
+    
+    func handleBoulderAreaTap(at location: LocationAnnotation, regionBinding: Binding<MKCoordinateRegion>) {
+        var region = regionBinding.wrappedValue
+        let zoomLevel: CLLocationDegrees = 0.1 // Adjust this for the desired zoom level
+        region = MKCoordinateRegion(
+            center: location.coordinate,
+            span: MKCoordinateSpan(latitudeDelta: zoomLevel, longitudeDelta: zoomLevel)
+        )
+        withAnimation {
+            regionBinding.wrappedValue = region
         }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if let data = data, let decodedResponse = try? JSONDecoder().decode([T].self, from: data) {
-                DispatchQueue.main.async {
-                    binding.wrappedValue = decodedResponse
-                }
-            } else {
-                print("Fetch failed: \(error?.localizedDescription ?? "Unknown error")")
-            }
-        }.resume()
+        
     }
+    
+    
+
 }
 
 

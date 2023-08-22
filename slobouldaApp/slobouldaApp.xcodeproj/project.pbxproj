@@ -22,6 +22,8 @@
 		CDCFEB532A8C26EF00AB24D5 /* nokiafc22.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDCFEB512A8C26D100AB24D5 /* nokiafc22.ttf */; };
 		CDCFEB572A8CE8D400AB24D5 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB562A8CE8D400AB24D5 /* FavouritesView.swift */; };
 		CDCFEB592A8CE8E000AB24D5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB582A8CE8E000AB24D5 /* ProfileView.swift */; };
+		CDCFEB5D2A95288300AB24D5 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB5C2A95288300AB24D5 /* DataLoader.swift */; };
+		CDCFEB5F2A953A7F00AB24D5 /* MapAnnotationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCFEB5E2A953A7F00AB24D5 /* MapAnnotationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		CDCFEB512A8C26D100AB24D5 /* nokiafc22.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = nokiafc22.ttf; path = "../../../graphics/nokia-cellphone-fc/nokiafc22.ttf"; sourceTree = "<group>"; };
 		CDCFEB562A8CE8D400AB24D5 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 		CDCFEB582A8CE8E000AB24D5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CDCFEB5C2A95288300AB24D5 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		CDCFEB5E2A953A7F00AB24D5 /* MapAnnotationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +117,14 @@
 			children = (
 				CDCFEB492A8C212600AB24D5 /* Info.plist */,
 				CDCFEB472A8C1F6400AB24D5 /* Fonts */,
-				CDCFEB102A8B60C500AB24D5 /* slobouldaApp.swift */,
+				CDCFEB5C2A95288300AB24D5 /* DataLoader.swift */,
 				CDCFEB3C2A8B89E400AB24D5 /* MapView.swift */,
+				CDCFEB5E2A953A7F00AB24D5 /* MapAnnotationHandler.swift */,
 				CDCFEB122A8B60C500AB24D5 /* ContentView.swift */,
 				CDCFEB3E2A8B955000AB24D5 /* htmlCodeColor.swift */,
 				CDCFEB582A8CE8E000AB24D5 /* ProfileView.swift */,
 				CDCFEB562A8CE8D400AB24D5 /* FavouritesView.swift */,
+				CDCFEB102A8B60C500AB24D5 /* slobouldaApp.swift */,
 				CDCFEB142A8B60C700AB24D5 /* Assets.xcassets */,
 				CDCFEB162A8B60C700AB24D5 /* Preview Content */,
 			);
@@ -297,7 +303,9 @@
 			files = (
 				CDCFEB132A8B60C500AB24D5 /* ContentView.swift in Sources */,
 				CDCFEB572A8CE8D400AB24D5 /* FavouritesView.swift in Sources */,
+				CDCFEB5D2A95288300AB24D5 /* DataLoader.swift in Sources */,
 				CDCFEB3D2A8B89E400AB24D5 /* MapView.swift in Sources */,
+				CDCFEB5F2A953A7F00AB24D5 /* MapAnnotationHandler.swift in Sources */,
 				CDCFEB592A8CE8E000AB24D5 /* ProfileView.swift in Sources */,
 				CDCFEB112A8B60C500AB24D5 /* slobouldaApp.swift in Sources */,
 				CDCFEB3F2A8B955000AB24D5 /* htmlCodeColor.swift in Sources */,
